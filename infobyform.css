@@ -1,11 +1,12 @@
-
 .mainsatish, .sati {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+    width: calc(100% - 20px);
+    margin: 0 10px;
+}
+
+marquee a:hover {
+    background-color: #ffe100;
+    color: rgb(255, 77, 1);
+    
 }
 
 h1 {
@@ -38,9 +39,10 @@ nav {
 .shortlink a:hover {
     background-color: rgb(230, 5, 5);
 }
+
 .shortlink {
-    width: calc(100% - 20px);
-    margin: 10px auto;
+     width: calc(100% - 20px);
+    margin: 10px    auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 6px;
@@ -55,7 +57,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .main {
@@ -91,23 +92,31 @@ nav {
     flex-direction: column;
 }
 
-.section-content p {
-
-    border: 2px solid rgb(233, 8, 8);
-    padding: 10px;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+.section-content p a{
+    color: black;
 }
-.section-content p:hover {
-    background-color: rgb(203, 193, 225);
+
+.section-content hr{
+    border: 1px solid rgb(13, 12, 12);
+}
+
+.section-content p a:hover {
+    background-color: #ffe100;
+    color: rgb(255, 77, 1);
+    
 }
 .section-content button{
     display: block;
     width: 100%;
 }
+
 .section-content .buttona{
  margin-top: auto;
+}
+
+.section-content button:hover{
+   background-color: #e40c0c;
+   color: #ffffff;
 }
 
 .footer1 {
@@ -118,6 +127,121 @@ nav {
     display: flex;
     margin-top: 39px;
 }
+
+            .social-icons{
+                display:flex;
+                justify-content:center;
+                gap:30px;
+            }
+
+            .social{
+                position:relative;
+            }
+
+            .social .instagram{
+                color:#f70404;
+                font-size:40px;
+                text-decoration:none;
+                transition:0.3s;
+            }
+
+            .social .linkedin{
+                color:#1550f1;
+                font-size:40px;
+                text-decoration:none;
+                transition:0.3s;
+            }
+
+            .social .facebook{
+                color:#1550f1;
+                font-size:40px;
+                text-decoration:none;
+                transition:0.3s;
+            }
+
+            .social .twitter{
+                color:#1550f1;
+                font-size:40px;
+                text-decoration:none;
+                transition:0.3s;
+            }
+
+            .social .youtube{
+                color:#f70404;
+                font-size:40px;
+                text-decoration:none;
+                transition:0.3s;
+            }
+
+            .social a:hover{
+                transform:scale(1.2);
+            }
+
+            .iconred{
+                position:absolute;
+                bottom:60px;
+                left:50%;
+                transform:translateX(-50%) scale(0);
+                background:#ef0b0b;
+                color: aliceblue;
+                padding:6px 14px;
+                border-radius:6px;
+                font-size:14px;
+                white-space:nowrap;
+                box-shadow:0 0 12px #f10f0f;
+                transition:0.25s;
+                pointer-events:none;
+            }
+
+            .iconred::after{
+                content:"";
+                position:absolute;
+                top:100%;
+                left:50%;
+                transform:translateX(-50%);
+                border:6px solid transparent;
+                border-top-color:#e40c0c;
+            }
+
+             .social:hover .iconred{
+                transform:translateX(-50%) scale(1);
+            } 
+
+            .iconblu{
+                position:absolute;
+                bottom:60px;
+                left:50%;
+                transform:translateX(-50%) scale(0);
+                background:#1550f1;
+                color: aliceblue;
+                padding:6px 14px;
+                border-radius:6px;
+                font-size:14px;
+                white-space:nowrap;
+                box-shadow:0 0 12px #1550f1;
+                transition:0.25s;
+                pointer-events:none;
+            }
+
+            .iconblu::after{
+                content:"";
+                position:absolute;
+                top:100%;
+                left:50%;
+                transform:translateX(-50%);
+                border:6px solid transparent;
+                border-top-color:#1550f1;
+            }
+
+             .social:hover .iconblu{
+                transform:translateX(-50%) scale(1);
+            } 
+           
+
+           footer{
+            justify-content: center;
+            text-align: center;
+           }
 
 
 /* MOBILE RESPONSIVE */
@@ -177,5 +301,14 @@ nav {
         box-sizing: border-box;
         word-wrap: break-word;
     }
+
+    .footer1 {
+    background-color: rgb(241, 206, 5);
+    height: 300px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-top: 39px;
+}
 
 }
