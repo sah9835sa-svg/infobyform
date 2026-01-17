@@ -13,6 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BiharD.El.edresult</title>
+    <link rel="stylesheet"href="infobyform.css">
     <style>
         h1 {
             font-size:50px;
@@ -65,6 +66,16 @@
     </style>
 </head>
 <body>
+    <div id="header"></div>
+            <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch("header.html?v=" + Date.now())
+                .then(r => r.text())
+                .then(d => {
+                    document.getElementById("header").innerHTML = d;
+                });
+        });
+        </script>
     <div>
         <h1><strong>Bihar D.El.Ed Result 2025 - Check Direct Llink</strong></h1>
 
@@ -145,11 +156,11 @@
                     </tr>
                     <tr>
                         <td>Deled-2025-27-college_list</td>
-                        <td><a href="Deled-2025-27-college_list.pdf">D.El.Ed. College 25-27 List</a></td>
+                        <td><a href="Deled-2025-27-college_list.pdf" target="_blank">D.El.Ed. College 25-27 List</a></td>
                     </tr>
                     <tr>
                         <td>Official Website</td>
-                        <td><a href="https://secondary.biharboardonline.com/">Open Official Website</a></td>
+                        <td><a href="https://secondary.biharboardonline.com/" target="_blank">Open Official Website</a></td>
                     </tr>
                     <tr>
                         <td>InFoByForm home page</td>
