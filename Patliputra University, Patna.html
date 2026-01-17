@@ -13,6 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patliputra Universityt</title>
+    <link rel="stylesheet" href="infobyform.css">
     <style>
         h1 {
             font-size:50px;
@@ -68,6 +69,16 @@
     </style>
 </head>
 <body>
+    <div id="header"></div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    fetch("header.html?v=" + Date.now())
+        .then(r => r.text())
+        .then(d => {
+            document.getElementById("header").innerHTML = d;
+        });
+});
+</script>
     <div class="content">
         <div><h1>पाटलिपुत्र विश्वविद्यालय स्नातक सत्र 2025 - 2027 सेमेस्टर-5 का एडमिट कार्ड जारी</h1></div>
 
@@ -80,21 +91,13 @@
             <tr>
                 <td colspan="2" class="link">Important Links</td>
             </tr>
-
-            <tr>
-                <td></td>
-            </tr>
             <tr>
                 <th>Admit Card Download Link</th>
-                <th><a href="https://ppuponline.in/Search-Admit-Card-NR5x.php">Download Admit Card</a></th>
-            </tr>
-            <tr>
-                <td>Exam Date Notice</td>
-                <td><a href="Bihar-JEEViKA-2025.jpeg">Official Notification</a></td>
+                <th><a href="https://ppuponline.in/Search-Admit-Card-NR5x.php" target="_blank">Download Admit Card</a></th>
             </tr>
             <tr>
                 <td>Official Website</td>
-                <td><a href="https://ppuponline.in/">Open Official Website</a></td>
+                <td><a href="https://ppuponline.in/" target="_blank">Open Official Website</a></td>
             </tr>
             <tr>
                 <td>InFoByForm home page</td>
