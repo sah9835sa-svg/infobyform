@@ -138,6 +138,13 @@ nav {
                 position:relative;
             }
 
+            .social .WhatsApp{
+                color:#04f74d;
+                font-size:40px;
+                text-decoration:none;
+                transition:0.3s;
+            }
+
             .social .instagram{
                 color:#f70404;
                 font-size:40px;
@@ -160,7 +167,7 @@ nav {
             }
 
             .social .twitter{
-                color:#1550f1;
+                color:#000000;
                 font-size:40px;
                 text-decoration:none;
                 transition:0.3s;
@@ -176,6 +183,37 @@ nav {
             .social a:hover{
                 transform:scale(1.2);
             }
+
+            .icongreen{
+                position:absolute;
+                bottom:60px;
+                left:50%;
+                transform:translateX(-50%) scale(0);
+                background:#04f74d;
+                color: aliceblue;
+                padding:6px 14px;
+                border-radius:6px;
+                font-size:14px;
+                white-space:nowrap;
+                box-shadow:0 0 12px #04f74d;
+                transition:0.25s;
+                pointer-events:none;
+            }
+
+            .icongreen::after{
+                content:"";
+                position:absolute;
+                top:100%;
+                left:50%;
+                transform:translateX(-50%);
+                border:6px solid transparent;
+                border-top-color:#04f74d;
+            }
+
+             .social:hover .icongreen{
+                transform:translateX(-50%) scale(1);
+            } 
+
 
             .iconred{
                 position:absolute;
@@ -234,6 +272,36 @@ nav {
             }
 
              .social:hover .iconblu{
+                transform:translateX(-50%) scale(1);
+            } 
+
+            .iconback{
+                position:absolute;
+                bottom:60px;
+                left:50%;
+                transform:translateX(-50%) scale(0);
+                background:#000000;
+                color: aliceblue;
+                padding:6px 14px;
+                border-radius:6px;
+                font-size:14px;
+                white-space:nowrap;
+                box-shadow:0 0 12px #000000;
+                transition:0.25s;
+                pointer-events:none;
+            }
+
+            .iconback::after{
+                content:"";
+                position:absolute;
+                top:100%;
+                left:50%;
+                transform:translateX(-50%);
+                border:6px solid transparent;
+                border-top-color:#000000;
+            }
+
+             .social:hover .iconback{
                 transform:translateX(-50%) scale(1);
             } 
            
