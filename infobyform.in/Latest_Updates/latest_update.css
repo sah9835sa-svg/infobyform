@@ -1,0 +1,85 @@
+/* Main */
+
+.home-main {
+
+    width: calc(100% - 20px);
+
+    margin: 10px auto;
+
+    display: grid;
+    gap: 15px;
+
+}
+
+
+/* Card */
+
+.section {
+    border: 2px solid rgb(0, 12, 0);
+    border-radius: 8px 8px 0 0;
+
+}
+.section-title {
+
+    background: white;
+
+    border: 2px solid rgb(0, 12, 0);
+
+    padding: 15px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    border-radius: 8px 8px 0 0;
+
+}
+
+.section-content {
+    background: white;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+    height: auto;
+}
+
+.section-content a {
+
+    text-decoration: none;
+
+    color: black;
+
+}
+
+.section-content a:hover {
+
+    color: red;
+
+}
+
+.buttona {
+
+    margin-top: auto;
+
+}
+
+.buttona button {
+
+    width: 100%;
+
+    padding: 10px;
+
+    cursor: pointer;
+
+}
+
+.buttona button:hover {
+
+    background: red;
+
+    color: white;
+
+}

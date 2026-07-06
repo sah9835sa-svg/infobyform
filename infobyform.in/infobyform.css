@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    line-height: 1.6;
+}
+
+
+/* Search */
+
+.search-box {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-box input {
+    width: 75%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    background: #0b5ed7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+
+    background: #083b8a;
+
+}
+
+
+/* Main */
+
+.home-main {
+
+    width: calc(100% - 20px);
+
+    margin: 10px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+/* Card */
+
+.section {
+    border: 2px solid rgb(0, 12, 0);
+    border-radius: 8px 8px 0 0;
+
+}
+.section-title {
+
+    background: white;
+
+    border: 2px solid rgb(0, 12, 0);
+
+    padding: 15px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    border-radius: 8px 8px 0 0;
+
+}
+
+.section-content {
+    background: white;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+    height: auto;
+}
+
+.section-content a {
+
+    text-decoration: none;
+
+    color: black;
+
+}
+
+.section-content a:hover {
+
+    color: red;
+
+}
+
+.buttona {
+
+    margin-top: auto;
+
+}
+
+.buttona button {
+
+    width: 100%;
+
+    padding: 10px;
+
+    cursor: pointer;
+
+}
+
+.buttona button:hover {
+
+    background: red;
+
+    color: white;
+
+}
+
+
+/* Mobile */
+
+@media(max-width:768px) {
+
+    .home-main {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .search-box {
+
+        flex-direction: column;
+
+    }
+
+    .search-box input {
+
+        width: 100%;
+
+    }
+
+}
+
+
+
+.page-box {
+
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    line-height: 1.8;
+
+}
+
+.page-box h1 {
+
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+@media(max-width:768px) {
+
+    .page-box {
+
+        width: 95%;
+        padding: 20px;
+
+    }
+
+}

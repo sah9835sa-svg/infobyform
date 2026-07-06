@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+}
+
+
+/* WEBSITE NAME */
+
+h1 {
+
+    background: #0b5ed7;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 45px;
+
+}
+
+
+/* NAVIGATION */
+
+nav {
+
+    background: #083b8a;
+    position: relative;
+
+}
+
+.navebar {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+
+}
+
+.navebar a {
+
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: .3s;
+
+}
+
+.navebar a:hover {
+
+    background: #11f56d;
+    color: black;
+
+}
+
+
+/* HOME ACTIVE */
+
+
+
+
+/* MENU ICON */
+
+.menu-icon {
+
+    display: none;
+    font-size: 30px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+
+/* NEWS BAR */
+
+.news-bar {
+
+    padding: 10px;
+    background: white;
+
+}
+
+.news-bar a {
+
+    text-decoration: none;
+    color: black;
+
+}
+
+.news-bar a:hover {
+
+    color: red;
+
+}
+
+
+/* SHORT LINKS */
+
+.shortlink {
+
+    width: 95%;
+    margin: 15px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+
+}
+
+.shortlink a {
+
+    background: #083b8a;
+    min-height: 60px;
+    padding: 10px;
+
+    color: white;
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    transition: .3s;
+
+}
+
+.shortlink a:hover {
+
+    background: #11f56d;
+    transform: scale(1.03);
+        color: black;
+
+
+}
+
+/* NEWS BAR */
+
+
+/* MOBILE */
+
+@media(max-width:768px) {
+
+    h1 {
+
+        font-size: 30px;
+
+    }
+
+    .menu-icon {
+
+        display: block;
+
+    }
+
+    .navebar {
+
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background: #083b8a;
+
+    }
+
+    .navebar.show {
+
+        display: flex;
+
+    }
+
+    .shortlink {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}

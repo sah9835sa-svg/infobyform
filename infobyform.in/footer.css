@@ -1,0 +1,215 @@
+.footer1 {
+
+    background: #f1ce05;
+    padding: 30px;
+    margin-top: 40px;
+    height: auto;
+
+}
+
+footer {
+
+    text-align: center;
+
+}
+
+.footer1 p {
+
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 40px;
+    line-height: 1.8;
+
+}
+
+
+/* SOCIAL ICONS */
+
+.social-icons {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+
+.social {
+
+    position: relative;
+
+}
+
+.social a {
+
+    font-size: 40px;
+    text-decoration: none;
+    transition: .3s;
+
+}
+
+.social a:hover {
+
+    transform: scale(1.2);
+
+}
+
+
+/* TOOLTIP */
+
+.tooltip {
+
+    position: absolute;
+
+    bottom: 60px;
+
+    left: 50%;
+
+    transform: translateX(-50%) scale(0);
+
+    background: #333;
+
+    color: white;
+
+    padding: 6px 14px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+
+    transition: .3s;
+
+    pointer-events: none;
+
+}
+
+.tooltip::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 100%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border: 6px solid transparent;
+
+    border-top-color: #333;
+
+}
+
+.social:hover .tooltip {
+
+    transform: translateX(-50%) scale(1);
+
+}
+
+
+/* ICON COLORS */
+
+.whatsapp {
+
+    color: #25D366;
+
+}
+
+.Tligram {
+
+    color: #0A66C2;
+
+}
+
+.instagram {
+
+    color: #E1306C;
+
+}
+
+.linkedin {
+
+    color: #0A66C2;
+
+}
+
+.facebook {
+
+    color: #1877F2;
+
+}
+
+.twitter {
+
+    color: black;
+
+}
+
+.youtube {
+
+    color: red;
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px) {
+
+    .social-icons {
+
+        gap: 20px;
+
+    }
+
+    .social a {
+
+        font-size: 30px;
+
+    }
+
+    .footer1 p {
+
+        font-size: 14px;
+
+    }
+
+    .footer-links {
+
+        margin: 25px 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+    }
+
+    .footer-links a {
+
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        transition: .3s;
+
+    }
+
+    .footer-links a:hover {
+
+        color: #0b5ed7;
+
+    }
+
+    .footer-bottom {
+        border-top: 1px solid #333;
+        padding-top: 5px;
+        font-size: 14px;
+        color: #aaa;
+    }
+
+    .footer-links {
+        padding-bottom: 50px;
+    }
+
+}
