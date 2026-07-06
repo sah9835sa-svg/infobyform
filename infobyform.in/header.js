@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             document.getElementById("header").innerHTML = data;
 
+            // Header load होने के बाद page दिखाओ
+            document.body.style.visibility = "visible";
+
             // menu fix
             const menuIcon = document.querySelector(".menu-icon");
             const navMenu = document.getElementById("navMenu");
