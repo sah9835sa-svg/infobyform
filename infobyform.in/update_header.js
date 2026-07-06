@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("header").innerHTML = data;
 
             // Header load होने के बाद body दिखाओ
-            document.body.style.visibility = "visible";
+            ddocument.body.style.visibility = "visible";
 
             // Menu toggle
             const menuIcon = document.querySelector(".menu-icon");
