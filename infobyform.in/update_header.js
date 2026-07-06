@@ -6,6 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             document.getElementById("header").innerHTML = data;
 
+            // Header load होने के बाद body दिखाओ
+            document.body.style.visibility = "visible";
+
             // Menu toggle
             const menuIcon = document.querySelector(".menu-icon");
             const navMenu = document.getElementById("navMenu");
@@ -19,6 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => {
             console.log("Update Header Load Error:", error);
+
+            // Error आए तब भी page दिखे
+            document.body.style.visibility = "visible";
         });
 
 });
